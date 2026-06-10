@@ -41,55 +41,55 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDGFjui3dOIcvsT2VB1QEXt8XTwoEscl2I',
-    appId: '1:1049888034267:web:1543fbdd2781e88fdeabfe',
-    messagingSenderId: '1049888034267',
-    projectId: 'chat-cd5e0',
-    authDomain: 'chat-cd5e0.firebaseapp.com',
-    databaseURL: 'https://chat-cd5e0-default-rtdb.europe-west1.firebasedatabase.app',
-    storageBucket: 'chat-cd5e0.firebasestorage.app',
-    measurementId: 'G-2R08BRBDLY',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    authDomain: '',
+    databaseURL: '',
+    storageBucket: '',
+    measurementId: '',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBJ_KImISNhTc8w-MwXfDBjRPpSbKILF7c',
-    appId: '1:1049888034267:android:7854a9b6d491b654deabfe',
-    messagingSenderId: '1049888034267',
-    projectId: 'chat-cd5e0',
-    databaseURL: 'https://chat-cd5e0-default-rtdb.europe-west1.firebasedatabase.app',
-    storageBucket: 'chat-cd5e0.firebasestorage.app',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    databaseURL: '',
+    storageBucket: '',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDbhC8FDpEtOdpPcnQpCrubN0AMStQGQt8',
-    appId: '1:1049888034267:ios:04aedd1066fafb50deabfe',
-    messagingSenderId: '1049888034267',
-    projectId: 'chat-cd5e0',
-    databaseURL: 'https://chat-cd5e0-default-rtdb.europe-west1.firebasedatabase.app',
-    storageBucket: 'chat-cd5e0.firebasestorage.app',
-    iosClientId: '1049888034267-sdn7fsnkdv0bilimk825924gq8n8bpu4.apps.googleusercontent.com',
-    iosBundleId: 'com.example.push',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    databaseURL: '',
+    storageBucket: '',
+    iosClientId: '',
+    iosBundleId: '',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDbhC8FDpEtOdpPcnQpCrubN0AMStQGQt8',
-    appId: '1:1049888034267:ios:04aedd1066fafb50deabfe',
-    messagingSenderId: '1049888034267',
-    projectId: 'chat-cd5e0',
-    databaseURL: 'https://chat-cd5e0-default-rtdb.europe-west1.firebasedatabase.app',
-    storageBucket: 'chat-cd5e0.firebasestorage.app',
-    iosClientId: '1049888034267-sdn7fsnkdv0bilimk825924gq8n8bpu4.apps.googleusercontent.com',
-    iosBundleId: 'com.example.push',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    databaseURL: '',
+    storageBucket: '',
+    iosClientId: '',
+    iosBundleId: '',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyANLYO2x3UlU3XnsZ62JpF5OI-Z_NtUD00',
-    appId: '1:1049888034267:web:cf5efd8608581742deabfe',
-    messagingSenderId: '1049888034267',
-    projectId: 'chat-cd5e0',
-    authDomain: 'chat-cd5e0.firebaseapp.com',
-    databaseURL: 'https://chat-cd5e0-default-rtdb.europe-west1.firebasedatabase.app',
-    storageBucket: 'chat-cd5e0.firebasestorage.app',
-    measurementId: 'G-K6LX0VS5W3',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    authDomain: '',
+    databaseURL: '',
+    storageBucket: '',
+    measurementId: '',
   );
 }
