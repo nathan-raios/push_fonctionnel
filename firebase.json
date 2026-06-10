@@ -3,20 +3,20 @@
     "platforms": {
       "android": {
         "default": {
-          "projectId": "chat-cd5e0",
-          "appId": "1:1049888034267:android:7854a9b6d491b654deabfe",
-          "fileOutput": "android/app/google-services.json"
+          "projectId": "c",
+          "appId": "",
+          "fileOutput": ""
         }
       },
       "dart": {
         "lib/firebase_options.dart": {
-          "projectId": "chat-cd5e0",
+          "projectId": "",
           "configurations": {
-            "android": "1:1049888034267:android:7854a9b6d491b654deabfe",
-            "ios": "1:1049888034267:ios:04aedd1066fafb50deabfe",
-            "macos": "1:1049888034267:ios:04aedd1066fafb50deabfe",
-            "web": "1:1049888034267:web:1543fbdd2781e88fdeabfe",
-            "windows": "1:1049888034267:web:cf5efd8608581742deabfe"
+            "android": "",
+            "ios": "",
+            "macos": "",
+            "web": "",
+            "windows": ""
           }
         }
       }
