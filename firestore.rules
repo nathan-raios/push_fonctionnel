@@ -1,0 +1,57 @@
+// firestore.rules
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isAuth() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuth() && request.auth.uid == userId;
+    }
+
+    function getUserRole() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role;
+    }
+
+    function isOrganisateur() {
+      return isAuth() && getUserRole() == 'organisateur';
+    }
+
+    function isAdmin() {
+      return isAuth() && getUserRole() == 'admin';
+    }
+
+    // USERS
+    match /users/{userId} {
+      allow read: if isAuth();
+      allow create: if isOwner(userId);
+      allow update: if isOwner(userId) || isAdmin();
+      allow delete: if isAdmin();
+    }
+
+    // EVENTS
+    match /events/{eventId} {
+      allow read: if true;
+      allow create: if isOrganisateur() &&
+        request.resource.data.organisateurId == request.auth.uid;
+      allow update: if isAuth() &&
+        (resource.data.organisateurId == request.auth.uid || isAdmin());
+      allow delete: if isAuth() &&
+        (resource.data.organisateurId == request.auth.uid || isAdmin());
+    }
+
+    // TICKETS
+    match /tickets/{ticketId} {
+      allow read: if isAuth() &&
+        (resource.data.userId == request.auth.uid ||
+         isOrganisateur() || isAdmin());
+      allow create: if isAuth() &&
+        request.resource.data.userId == request.auth.uid;
+      allow update: if isOrganisateur() || isAdmin();
+      allow delete: if isAdmin();
+    }
+  }
+}
